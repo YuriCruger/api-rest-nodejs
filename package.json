@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -20,10 +21,13 @@
   },
   "dependencies": {
     "@fastify/cookie": "^9.3.1",
+    "@types/supertest": "^6.0.2",
     "dotenv": "^16.4.5",
     "fastify": "^4.26.2",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0",
+    "vitest": "^1.5.1",
     "zod": "^3.23.4"
   }
 }
